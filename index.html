@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title> The Code Review </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Noto+Sans+JP:wght@100;500&display=swap" rel="stylesheet">  <body>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Noto+Sans+JP:wght@100;500&display=swap" rel="stylesheet"> 
+     <body>
     <header>
         <h1> THE CODE REVIEW </h1>
     </header> 
 
+    <main>
     <div class="description">
     <h2> Signup for our newsletter</h2>
     <p class="pdescription"> Get the latest news on how your code is doing right in your inbox </p>
@@ -16,39 +19,64 @@
     <hr class="first">
 
     <form>
-        <fieldset><br>
+        <fieldset>
             <legend> Contact Information </legend>
-                <label for="fullname"> Full Name </label><br>
-                <input class="fullwidth" type="text" id="fullname" name="user-name" placeholder="Required"><br>
-                <label for="email"> Email Address </label><br>
-                <input class="fullwidth" type="email" id="email" name="user-email" placeholder="Required"><br>
-                <label for="phone"> Phone Number </label><br>
-                <input class="fullwidth" type="text" id="phone" name="user-phone"><br>
-                <label for="address"> Street Address </label><br>
-                <input class="fullwidth" type="text" id="address" name="user-address"><br>
-                <label for="city"> City </label><br>
-                <input class="fullwidth" type="text" id="city" name="user-city"><br>
-                <label for="state"> State </label><br>
-                <select class="fullwidth" id="state" name="user-state">
-                    <option class="placeholderstate" value="" disabled selected hidden>Choose State </option>
-                    <option value="ca"> CA </option>
-                    <option value="tx"> TX </option>
-                    <option value="az"> AZ </option>
-                    <option value="nv"> NV </option>
-                </select><br>
-                <label for="zipcode"> Zip Code </label><br>
-                <input class="zipcode" type="text" id="zipcode" name="user-zip"><br>
+                <div class="formdiv">
+                <label for="fullname"> Full Name </label>
+                <input class="fullwidth" type="text" id="fullname" name="user-name" placeholder="Required" required>
+                </div>
+
+                <div class="formdiv">
+                <label for="email"> Email Address </label>
+                <input class="fullwidth" type="email" id="email" name="user-email" placeholder="Required" required>
+                </div>
+
+                <div class="formdiv">
+                <label for="phone"> Phone Number </label>
+                <input class="fullwidth" type="text" id="phone" name="user-phone">
+                </div>
+
+                <div class="formdiv">
+                <label for="address"> Street Address </label>
+                <input class="fullwidth" type="text" id="address" name="user-address">
+                </div>
+
+                <div class="formdiv">
+                <label for="city"> City </label>
+                <input class="fullwidth" type="text" id="city" name="user-city">
+                </div>
+
+                <div class="formdiv">
+                    <label for="state"> State </label>
+                    <select class="fullwidth" id="state" name="user-state">
+                        <option class="placeholderstate" value="" disabled selected hidden>Choose State </option>
+                        <option value="ca"> CA </option>
+                        <option value="tx"> TX </option>
+                        <option value="az"> AZ </option>
+                        <option value="nv"> NV </option>
+                    </select>
+                 </div>
+
+                 <div class="formdiv">
+                <label for="zipcode"> Zip Code </label>
+                <input class="zipcode" type="text" id="zipcode" name="user-zip">
+                </div>
+
          </fieldset>
 
          <hr class="second">
 
          <fieldset>
             <legend> Newsletter </legend>
+
                 <label class="labelnews"> Select the newsletters you would like to recieve </label><br>
+
                 <input type="checkbox" id="htmlnews" name="news" value="html">
                 <label for="htmlnews"> HTML News </label><br>
+
                 <input type="checkbox" id="cssnews" name="news" value="css">
                 <label for="cssnews"> CSS News </label><br>
+
                 <input type="checkbox" id="javascriptnews" name="news" value="java">
                 <label for="javascriptnews"> Javascript News </label><br>
 
@@ -58,8 +86,8 @@
                 <input type="radio" id="plain" name="format">
                 <label for="plain"> Plain text </label><br>
 
-                <label class="labelnews" for="other"> Other topics you'd like to hear about </label><br>
-                <textarea class="textarea" id="other" name="othertopics"></textarea><br>
+                <label class="labelnews" for="other"> Other topics you'd like to hear about </label>
+                <textarea class="textarea" id="other" name="othertopics"></textarea>
 
                 <input class="signup" type="submit" value="Sign Up">
         </fieldset>    
@@ -67,50 +95,17 @@
     <footer>
         <p> Copyright The Code Review </p>
     </footer>
-
-
-
-
-
-
-
-
-
-
+    </main> 
   </body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+          
 
 
 
