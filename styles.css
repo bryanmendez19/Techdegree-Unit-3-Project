@@ -74,7 +74,8 @@ hr.second {
 }
 
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
     outline-color: rgb(13, 86, 99);
 }
 
@@ -96,7 +97,7 @@ legend {
 
 
 .zipcode {
-    width: 40%;
+    width: 50%;
     background-color: rgb(231, 230, 230);
     height: 40px;
     border-radius: 5px;
@@ -204,7 +205,7 @@ footer {
     }
 
     .zipcode {
-        flex-basis: 30%;
+        flex-basis: 25%;
     }
 
 
